@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+#general-div-container{
+    display: grid;
+    grid-template-rows: repeat(10, 58px);
+    grid-template-columns: repeat(10, 100px);
+    font-weight: bold;
+}
+
+#menu-dashboard-content{
+    background-color: rgb(31, 141, 197);
+    color:white; 
+    grid-area: 1 / 1 / 11 / 3 ;
+    text-align: left ;
+}
+
+#menu-bar-content{
+    background-color: rgb(255, 255, 255) ;
+    color: black; 
+    grid-area: 1 / 3 / 3 / 11 ;  
+    box-shadow: 1px 3px 2px rgba(81, 81, 81, 0.36); 
+}
+
+#menu-content{
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(15, 50px);
+    background-color: rgb(214, 219, 233);
+    grid-area: 3 / 3 / 11 / 11;
+    gap: 3px; 
+    z-index: -1 ;
+}
+
+#your-project-content{
+    margin: 10px;
+    grid-area: 1 / 1 / 10 / 12;
+}
+
+#your-project-content>div{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: repeat(2, 274px);
+    grid-template-rows: repeat(3, 131px); 
+    gap: 10px;
+}
+
+.project-div{
+    padding: 18px; 
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px ;
+    border-radius: 3px;
+    box-shadow:  /*inner yellow bar*/inset 5px 0px 0px rgb(255, 187, 0), 
+                 /*out of box shadows*/4px 5px 5px rgba(128, 128, 128, 0.282);
+}
+
+.project-div>h5{
+    margin-bottom: 4px  ;
+}
+.bottom-icons{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    gap: 17px;
+}
+
+.bottom-icons>img{
+    width: 15px;
+    height: 15px;
+}
+.project-div>p{
+    font-weight: normal;
+    font-size: 9px;
+    color: rgba(78, 78, 78, 0.626);
+}
+#announcements{
+    margin: 10px;
+    grid-area: 1 / 12 / 5 / 17 ;
+}
+
+#trending{
+    margin: 10px;
+    grid-area: 5 / 12 / 10 / 17; 
+}
+
